@@ -17,7 +17,7 @@ pipeline{
                 echo "***Building the docker image***"
             }
         }
-        stage('K*Deploy') {
+        stage('K8Deploy') {
             steps{
                 echo "Deploy using K8"
             }
