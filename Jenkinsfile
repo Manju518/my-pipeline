@@ -4,7 +4,8 @@ pipeline{
         stage('Build') {
             steps{
                 echo "***Building the application****"
-             }     
+             }
+            
         }
         stage('Sonar') {
             steps{
@@ -16,6 +17,10 @@ pipeline{
                 echo "***Building the docker image***"
             }
         }
+        stage('K*Deploy') {
+            steps{
+                echo "Deploy using K8"
+            }
+        }
     }
-
 }
